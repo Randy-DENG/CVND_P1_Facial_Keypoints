@@ -31,9 +31,9 @@ class Net(nn.Module):
         self.drop3 = nn.Dropout2d(0.4)      # Output 25 x 25 after pooling
         
         self.conv4 = nn.Conv2d(128, 256, 3) # Output 24 x 24
-        self.drop4 = nn.Dropout2d(0.4)      # Output 12 x 12 after pooling
+        self.drop4 = nn.Dropout2d(0.4)      # Output 11 x 11 after pooling
         
-        self.fc1 = nn.Linear(36864, 1000)   # Output 
+        self.fc1 = nn.Linear(30976, 1000)   # Output 
         self.drop5 = nn.Dropout2d(0.5)
         
         self.fc2 = nn.Linear(1000, 1000)
